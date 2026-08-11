@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maggrosu - Developer Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="#home">Maggrosu</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#work">Work</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-controls">
+                <button class="theme-toggle" id="themeToggle">Dark</button>
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-profile">
+                    <img src="images/profile.jpg" alt="Mircea Grosu" class="profile-image">
+                    <div class="hero-text">
+                        <h1>Mircea Grosu</h1>
+                        <p class="subtitle" data-i18n="heroSubtitle">Student developer building practical automation tools. Python, AI integration, game development, and 3D art. 9 years of coding, looking for remote opportunities.</p>
+                        <div class="hero-meta">
+                            <span class="meta-item" data-i18n="location">Romania • Remote</span>
+                            <span class="meta-item" data-i18n="education">Electronics, Telecommunications & Information Technology Student @ ETTI ASACHI Iași</span>
+                            <span class="meta-item" data-i18n="workStatus">Open to remote work</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="work" class="work">
+        <div class="container">
+            <h2 data-i18n="workTitle">Recent work</h2>
+
+            
+            <div class="project-card">
+                <div class="project-header">
+                    <h3 data-i18n="ytAutomation">YouTube Content Automation</h3>
+                    <span class="project-status" data-i18n="statusProduction">Production</span>
+                </div>
+                <p class="project-description" data-i18n="ytAutomationDesc">Complete pipeline for generating quiz videos. Handles script generation, TTS voice cloning, visual composition, and automated uploads. Built because manual video editing is tedious.</p>
+                <div class="project-metrics">
+                    <div class="metric">
+                        <span class="metric-label" data-i18n="components">Components</span>
+                        <span class="metric-value">5 integrated systems</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-label" data-i18n="processing">Processing</span>
+                        <span class="metric-value">Auto script → video → upload</span>
+                    </div>
+                </div>
+                <div class="tech-stack">
+                    <span>Python</span>
+                    <span>MoviePy</span>
+                    <span>Ollama</span>
+                    <span>Edge TTS</span>
+                    <span>FFmpeg</span>
+                </div>
+            </div>
+
+            
+            <div class="project-card">
+                <div class="project-header">
+                    <h3 data-i18n="scriptGenerator">Multi-LLM Script Generator</h3>
+                    <span class="project-status" data-i18n="statusActive">Active</span>
+                </div>
+                <p class="project-description" data-i18n="scriptGeneratorDesc">Flexible script generation supporting Ollama, OpenAI, and Gemini. Generates quiz questions, documentary scripts, and content analysis. Switches between models based on availability and task.</p>
+                <div class="project-metrics">
+                    <div class="metric">
+                        <span class="metric-label" data-i18n="models">Models</span>
+                        <span class="metric-value">3 LLM backends</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-label" data-i18n="outputTypes">Output types</span>
+                        <span class="metric-value">Scripts, quizzes, analysis</span>
+                    </div>
+                </div>
+                <div class="tech-stack">
+                    <span>Python</span>
+                    <span>OpenAI API</span>
+                    <span>Google Gemini</span>
+                    <span>Ollama</span>
+                    <span>NLP</span>
+                </div>
+            </div>
+
+            
+            <div class="mobile-apps-header">
+                <h3 style="font-size: 24px; font-weight: 600; margin-bottom: 16px; color: var(--text-primary);" data-i18n="mobileAppsTitle">Published Mobile Apps</h3>
+                <p style="color: var(--text-secondary); margin-bottom: 24px;" data-i18n="mobileAppsDesc">Three apps live on Google Play Store - privacy-first, practical tools.</p>
+            </div>
+
+            
+            <div class="project-card">
+                <div class="project-header">
+                    <h3>BurnIQ - Burnout Tracker</h3>
+                    <span class="project-status" data-i18n="statusLive">Live on Play Store</span>
+                </div>
+                <p class="project-description" data-i18n="burniqDesc">Mental health monitoring app that tracks burnout risk. 12-question BAT assessment, 26 symptom monitoring, offline-first design. Built by people who needed it.</p>
+                <div class="project-metrics">
+                    <div class="metric">
+                        <span class="metric-label" data-i18n="assessment">Assessment</span>
+                        <span class="metric-value">12 questions, 2 minutes</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-label" data-i18n="tracking">Tracking</span>
+                        <span class="metric-value">26 symptoms, 0-100 score</span>
+                    </div>
+                </div>
+                <div class="tech-stack">
+                    <span>Android</span>
+                    <span>Privacy-first</span>
+                    <span>Offline</span>
+                    <span>Free</span>
+                </div>
+                <a href="https://play.google.com/store/apps/details?id=burnout.risk.iq" class="project-link" target="_blank">View on Play Store →</a>
+            </div>
+
+            
+            <div class="project-card">
+                <div class="project-header">
+                    <h3 data-i18n="cooldownTitle">Cooldown - Relaxation Timer</h3>
+                    <span class="project-status" data-i18n="statusLive">Live on Play Store</span>
+                </div>
+                <p class="project-description" data-i18n="cooldownDesc">Simple relaxation and mindfulness timer app. Helps users take structured breaks and manage stress. Clean interface, no tracking, works offline.</p>
+                <div class="project-metrics">
+                    <div class="metric">
+                        <span class="metric-label" data-i18n="focus">Focus</span>
+                        <span class="metric-value">Mindfulness & breaks</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-label" data-i18n="privacy">Privacy</span>
+                        <span class="metric-value">100% offline</span>
+                    </div>
+                </div>
+                <div class="tech-stack">
+                    <span>Android</span>
+                    <span>Offline</span>
+                    <span>No ads</span>
+                    <span>Free</span>
+                </div>
+                <a href="https://play.google.com/store/apps/details?id=com.relax.cooldown" class="project-link" target="_blank">View on Play Store →</a>
+            </div>
+
+            
+            <div class="project-card">
+                <div class="project-header">
+                    <h3 data-i18n="tapEarnTitle">Tap & Earn - Addictive Clicker</h3>
+                    <span class="project-status" data-i18n="statusLive">Live on Play Store</span>
+                </div>
+                <p class="project-description" data-i18n="tapEarnDesc">Incremental clicker game with progression mechanics. Tap to earn, upgrade, and unlock achievements. Built to explore game economy design and mobile game development patterns.</p>
+                <div class="project-metrics">
+                    <div class="metric">
+                        <span class="metric-label" data-i18n="genre">Genre</span>
+                        <span class="metric-value">Idle / Clicker</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-label" data-i18n="features">Features</span>
+                        <span class="metric-value">Upgrades & achievements</span>
+                    </div>
+                </div>
+                <div class="tech-stack">
+                    <span>Android</span>
+                    <span>Game Dev</span>
+                    <span>Free</span>
+                </div>
+                <a href="https://play.google.com/store/apps/details?id=com.tapandearn.game" class="project-link" target="_blank">View on Play Store →</a>
+            </div>
+
+            <div style="margin: 24px 0; padding: 16px; background: var(--secondary-bg); border-radius: 8px; border: 1px solid var(--border-color); text-align: center;">
+                <p style="color: var(--text-secondary); margin: 0; font-size: 14px;">
+                    <a href="https://play.google.com/store/apps/developer?id=Maggrosu" target="_blank" style="color: var(--accent-color); text-decoration: none; font-weight: 500;" data-i18n="viewPlayStore">View all apps on Google Play Store →</a>
+                </p>
+            </div>
+
+            
+            <div class="project-card">
+                <div class="project-header">
+                    <h3>Clothescheap</h3>
+                    <span class="project-status" data-i18n="statusDev">Development</span>
+                </div>
+                <p class="project-description" data-i18n="clothescheapDesc">Thrift store finder and sustainable fashion platform. Community-mapped locations, product management, and user authentication. Focus on making secondhand shopping easier.</p>
+                <div class="project-metrics">
+                    <div class="metric">
+                        <span class="metric-label" data-i18n="features">Features</span>
+                        <span class="metric-value">Store mapping, search, reviews</span>
+                    </div>
+                </div>
+                <div class="tech-stack">
+                    <span>Full-Stack</span>
+                    <span>Database</span>
+                    <span>Maps API</span>
+                    <span>Authentication</span>
+                </div>
+            </div>
+
+            
+            <div class="project-card">
+                <div class="project-header">
+                    <h3 data-i18n="voiceCloneTitle">Voice Cloning System</h3>
+                    <span class="project-status" data-i18n="statusProduction">Production</span>
+                </div>
+                <p class="project-description" data-i18n="voiceCloneDesc">Text-to-speech with voice cloning capabilities. Supports multiple reference voices, audio post-processing, and fallback to Edge TTS. Used in video automation pipeline.</p>
+                <div class="project-metrics">
+                    <div class="metric">
+                        <span class="metric-label" data-i18n="processing">Processing</span>
+                        <span class="metric-value">Clone → Generate → Post-process</span>
+                    </div>
+                </div>
+                <div class="tech-stack">
+                    <span>Python</span>
+                    <span>Chatterbox</span>
+                    <span>Edge TTS</span>
+                    <span>FFmpeg</span>
+                </div>
+            </div>
+
+            
+            <div class="blender-section" style="margin-top: 48px;">
+                <h3 style="font-size: 24px; font-weight: 600; margin-bottom: 16px; color: var(--text-primary);">3D Art & Blender Work</h3>
+                <p style="color: var(--text-secondary); margin-bottom: 24px;">1000+ hours in Blender - 3D modeling, rendering, and animation. Focus on product visualization, environments, and game assets.</p>
+
+                <div class="blender-gallery" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; margin-bottom: 24px;">
+                    <div class="gallery-item" style="border-radius: 8px; overflow: hidden; border: 1px solid var(--border-color);">
+                        <img src="images/RX7 with background.jpg" alt="RX7 Car Render" style="width: 100%; height: 200px; object-fit: cover; display: block;">
+                        <div style="padding: 12px; background: var(--secondary-bg);">
+                            <p style="margin: 0; font-size: 14px; color: var(--text-primary); font-weight: 500;">RX7 Car Render</p>
+                            <p style="margin: 4px 0 0 0; font-size: 12px; color: var(--text-secondary);">Product visualization</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" style="border-radius: 8px; overflow: hidden; border: 1px solid var(--border-color);">
+                        <img src="images/romanian landscape.png" alt="Romanian Landscape" style="width: 100%; height: 200px; object-fit: cover; display: block;">
+                        <div style="padding: 12px; background: var(--secondary-bg);">
+                            <p style="margin: 0; font-size: 14px; color: var(--text-primary); font-weight: 500;">Romanian Landscape</p>
+                            <p style="margin: 4px 0 0 0; font-size: 12px; color: var(--text-secondary);">Environment design</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" style="border-radius: 8px; overflow: hidden; border: 1px solid var(--border-color);">
+                        <img src="images/rx7 engine.png" alt="RX7 Engine Detail" style="width: 100%; height: 200px; object-fit: cover; display: block;">
+                        <div style="padding: 12px; background: var(--secondary-bg);">
+                            <p style="margin: 0; font-size: 14px; color: var(--text-primary); font-weight: 500;">RX7 Engine</p>
+                            <p style="margin: 4px 0 0 0; font-size: 12px; color: var(--text-secondary);">Technical modeling</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" style="border-radius: 8px; overflow: hidden; border: 1px solid var(--border-color);">
+                        <img src="images/HighresScreenshot00004.png" alt="Game Environment" style="width: 100%; height: 200px; object-fit: cover; display: block;">
+                        <div style="padding: 12px; background: var(--secondary-bg);">
+                            <p style="margin: 0; font-size: 14px; color: var(--text-primary); font-weight: 500;">Game Environment</p>
+                            <p style="margin: 4px 0 0 0; font-size: 12px; color: var(--text-secondary);">Unreal Engine 5</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" style="border-radius: 8px; overflow: hidden; border: 1px solid var(--border-color);">
+                        <img src="images/pray .png" alt="Character Pose" style="width: 100%; height: 200px; object-fit: cover; display: block;">
+                        <div style="padding: 12px; background: var(--secondary-bg);">
+                            <p style="margin: 0; font-size: 14px; color: var(--text-primary); font-weight: 500;">Character Study</p>
+                            <p style="margin: 4px 0 0 0; font-size: 12px; color: var(--text-secondary);">Modeling & posing</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" style="border-radius: 8px; overflow: hidden; border: 1px solid var(--border-color);">
+                        <img src="images/wallet.png" alt="Product Render" style="width: 100%; height: 200px; object-fit: cover; display: block;">
+                        <div style="padding: 12px; background: var(--secondary-bg);">
+                            <p style="margin: 0; font-size: 14px; color: var(--text-primary); font-weight: 500;">Product Render</p>
+                            <p style="margin: 4px 0 0 0; font-size: 12px; color: var(--text-secondary);">Commercial visualization</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="padding: 16px; background: var(--secondary-bg); border-radius: 8px; border: 1px solid var(--border-color);">
+                    <p style="color: var(--text-secondary); margin: 0; font-size: 14px;">
+                        <strong>Skills:</strong> Hard-surface modeling, PBR texturing, lighting & rendering (Cycles/Eevee), animation basics, Unreal Engine 5 integration
+                    </p>
+                </div>
+            </div>
+
+            
+            <div class="more-projects" style="margin-top: 24px;">
+                <p data-i18n="moreProjects">Additional projects: SnapQuest (interactive app), Serenity, Eclipse-Swarm, and various automation tools.</p>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="about" class="about">
+        <div class="container">
+            <h2 data-i18n="aboutTitle">About</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p data-i18n="aboutP1">I'm Mircea Grosu, a 21-year-old electronics, telecommunications and information technology student at ETTI ASACHI Iași, Romania. Been coding since I was 12 - started with game development, evolved into building automation systems and AI-powered tools.</p>
+                    <p data-i18n="aboutP2">Current work involves LLM integration (Ollama, OpenAI, Gemini), video processing pipelines, and Android apps that prioritize privacy and offline functionality. Also spent 1000+ hours in Blender doing 3D modeling and animation.</p>
+                    <p data-i18n="aboutP3">Led my own game development team, built multiple production apps, and now focused on practical automation that solves real problems. Philosophy: Keep it simple, make it work offline when possible, respect user privacy.</p>
+                    <p><strong data-i18n="aboutP4">Looking for remote opportunities in Python development, AI automation, game development, or full-stack roles.</strong></p>
+                </div>
+                <div class="skills-list">
+                    <h3 data-i18n="coreSkills">Core skills</h3>
+                    <ul>
+                        <li>Python (9 years experience)</li>
+                        <li>AI/LLM integration (Ollama, OpenAI, Gemini)</li>
+                        <li>Video/audio processing (MoviePy, FFmpeg)</li>
+                        <li>Game development (Unreal Engine 5)</li>
+                        <li>3D modeling & animation (Blender - 1000+ hours)</li>
+                        <li>Mobile app development (Android)</li>
+                        <li>Full-stack development</li>
+                        <li>API development and integration</li>
+                        <li>Web scraping and automation</li>
+                    </ul>
+                    <h3 data-i18n="languages">Languages</h3>
+                    <ul>
+                        <li>Romanian (native)</li>
+                        <li>English (fluent)</li>
+                        <li>French, Spanish (B1)</li>
+                        <li>German, Japanese, Mandarin (A2)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 data-i18n="contactTitle">Get in touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <p data-i18n="contactDesc">Open to remote opportunities in Python development, AI automation, game development, or full-stack roles. Particularly interested in projects involving AI automation, content generation systems, privacy-focused applications, or game development.</p>
+                    <div class="contact-methods">
+                        <a href="mailto:magrosunrg@gmail.com" class="contact-method">
+                            <span class="method-label">Email</span>
+                            <span class="method-value">magrosunrg@gmail.com</span>
+                        </a>
+                        <a href="https://github.com/Magrosunrg" target="_blank" class="contact-method">
+                            <span class="method-label">GitHub</span>
+                            <span class="method-value">github.com/Magrosunrg</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/mircea-grosu-852300219/" target="_blank" class="contact-method">
+                            <span class="method-label">LinkedIn</span>
+                            <span class="method-value">linkedin.com/in/mircea-grosu-852300219</span>
+                        </a>
+                    </div>
+                    <p class="contact-note" data-i18n="contactNote">Available for remote work worldwide. Response time: Usually within 24 hours.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4 data-i18n="footerProjects">Projects</h4>
+                    <ul>
+                        <li><a href="#work">YouTube Automation</a></li>
+                        <li><a href="#work">Script Generator</a></li>
+                        <li><a href="https://play.google.com/store/apps/details?id=burnout.risk.iq" target="_blank">BurnIQ App</a></li>
+                        <li><a href="#work">Clothescheap</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-i18n="footerConnect">Connect</h4>
+                    <ul>
+                        <li><a href="mailto:magrosunrg@gmail.com">Email</a></li>
+                        <li><a href="https://github.com/Magrosunrg" target="_blank">GitHub</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-i18n="footerInfo">Info</h4>
+                    <ul>
+                        <li><a href="#about" data-i18n="about">About</a></li>
+                        <li><a href="#work" data-i18n="work">Work</a></li>
+                        <li><a href="#contact" data-i18n="contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-i18n="footerCopyright">© 2026 Maggrosu. Built with honesty, no fluff.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
